@@ -26,11 +26,14 @@ export default function PostVIew() {
     return (<>
         <div className='postview-container'>
             <Navbar />
-            {userData && <div className='card-caontainer'>
-                {userData.map((data, idx) => {
-                    return <Card key={idx} data={data} />
-                })}
-            </div>}
+            {!userData.length ?
+                <h1 className='while-loading'>Loading Posts...</h1>
+                :
+                <div className='card-caontainer'>
+                    {userData.map((data, idx) => {
+                        return <Card key={idx} data={data} />
+                    })}
+                </div>}
         </div>
     </>
     )

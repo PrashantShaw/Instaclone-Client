@@ -144,7 +144,7 @@
 }
 .spacing{
   margin: 15px 0;
-  width: 400px;
+  width: 100%;
 }
 .image-file input{
   width: 99%;
@@ -162,5 +162,9 @@
   width: 99%;
 }
 .post-btn{
+  text-align: center;
+}
+.while-loading{
+  margin: 40px auto 0;
   text-align: center;
 }
