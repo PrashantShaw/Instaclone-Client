@@ -9,7 +9,7 @@ export default function PostVIew() {
 
     function fetchPosts() {
         axios
-            .get('https://prashant-instaclone-api.herokuapp.com/posts')
+            .get('https://instaclone-server.onrender.com/posts')
             .then(res => {
                 let dataArr = res.data
                 dataArr.reverse()
