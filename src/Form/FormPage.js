@@ -76,7 +76,7 @@ function FormPage() {
         e.preventDefault()
 
         axios
-            .post('https://prashant-instaclone-api.herokuapp.com/posts', data)
+            .post('https://instaclone-server.onrender.com/posts', data)
             .then(res => {
                 console.log('response :: ', res.data)
                 navigate('/PostView')
