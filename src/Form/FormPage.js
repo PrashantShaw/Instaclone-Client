@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from '../PostView/Navbar'
-import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Resizer from "react-image-file-resizer"
+import { createPosts } from '../api/api'
 
 function FormPage() {
 
@@ -75,8 +75,7 @@ function FormPage() {
 
         e.preventDefault()
 
-        axios
-            .post('https://prashant-instaclone-api.herokuapp.com/posts', data)
+        createPosts(data)
             .then(res => {
                 console.log('response :: ', res.data)
                 navigate('/PostView')
