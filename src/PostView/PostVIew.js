@@ -9,6 +9,7 @@ export default function PostVIew() {
     const [currPage, setCurrPage] = useState(1)
 
     function fetchPosts() {
+    
         getPosts(currPage)
             .then(res => {
                 let dataArr = res.data

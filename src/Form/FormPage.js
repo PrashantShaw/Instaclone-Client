@@ -75,8 +75,7 @@ function FormPage() {
 
         e.preventDefault()
 
-        createPosts(data)
-            .then(res => {
+            createPosts(data).then(res => {
                 console.log('response :: ', res.data)
                 navigate('/PostView')
             })
