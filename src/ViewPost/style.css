@@ -1,0 +1,35 @@
+.viewpost-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.viewpost-popup{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    /* border: 2px solid; */
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
+    min-width: 1200px;
+}
+.popup-rightside{
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like-date{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px 0;
+}

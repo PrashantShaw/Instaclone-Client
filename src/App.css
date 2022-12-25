@@ -29,6 +29,7 @@
   height: 180px;
   height: auto;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .img-section img{

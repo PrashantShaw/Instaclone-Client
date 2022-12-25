@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({ data }) => {
+const Card = ({ data, viewThisPost }) => {
   return (
     <div className='card'>
       <div className='top-section'>
@@ -15,7 +15,9 @@ const Card = ({ data }) => {
         </div>
       </div>
       <div className='img-section'>
-        <img src={data.PostImage} alt='pune city' />
+        <img src={data.PostImage} alt='pune city'
+          onClick={viewThisPost}
+        />
       </div>
       <div className='desc-section'>
         <div className='upper-desc'>

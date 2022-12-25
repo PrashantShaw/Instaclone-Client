@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Navbar from '../PostView/Navbar'
 import { useNavigate } from 'react-router-dom'
 import Resizer from "react-image-file-resizer"
 import { createPosts } from '../api/api'
+import Navbar from '../PostView/Navbar'
 
 function FormPage() {
 
@@ -85,7 +85,7 @@ function FormPage() {
 
     return (
         <>
-            <Navbar />
+        <Navbar />
             <div className='form-wrapper'>
                 <form onSubmit={onSubmitHandler}>
                     <div className='image-file spacing'>
